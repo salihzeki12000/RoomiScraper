@@ -38,7 +38,7 @@ export default async (browser, goToOptions) => {
             console.log('Number of pages: ', lastPage);
         }
 
-        const items = $('a.jss406[href*="rooms-for-rent"], a.jss399[href*="rooms-for-rent"]');
+        const items = $('a[class=""][href*="rooms-for-rent"]');
 
         if (items.length === 0) {
             throw new Error('no srp items found');
@@ -60,17 +60,17 @@ export default async (browser, goToOptions) => {
 
             if ($('.banner-text:contains("Bummer")').length === 0) {
 
-                const deposit = $('.jss116:contains("Deposit") + .jss117 span, .jss124:contains("Deposit") + .jss125 span, .jss117:contains("Deposit") + .jss118 span').text().replace('$','').replace(',','');
+                const deposit = $('div:contains("Deposit") + div span').text().replace('$','').replace(',','');
 
                 let result = {
                     link: 'https://roomiapp.com'+$(items[i]).attr('href'),
-                    price: parseInt($('.jss83 span span').text().replace('$','').replace(',','')),
+                    price: parseInt($('.ListingDetailBasic span span').text().replace('$','').replace(',','')),
                     neighborhood: $('meta[name="keywords"]').attr('content'),
                     deposit: parseInt(deposit),
-                    duration: $('.jss124:contains("Duration") + .jss125, .jss117:contains("Duration") + .jss118').text(),
-                    moveIn: $('.jss124:contains("Move In") + .jss125, .jss117:contains("Move In") + .jss118').text(),
-                    numRooms: $('.jss88 span:first-child').text(),
-                    sharedPrivate: $('.jss86').text(),
+                    duration: $('div:contains("Duration") + div').first().text(),
+                    moveIn: $('div:contains("Move In") + div').first().text(),
+                    numRooms: $('.ListingDetailBasic p span:first-child').text(),
+                    sharedPrivate: $('.ListingDetailBasic div div').first().text(),
                     roomDescription: $('.description p').text(),
                     userImage: $('img[src*="roomiprofile.imgix.net"]').attr('src'),
                     roomImages: [ ...new Set($('.carousel-image-container img').map((_, el) => $(el).attr('src')).get()) ]
