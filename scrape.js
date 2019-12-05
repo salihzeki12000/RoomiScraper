@@ -16,12 +16,8 @@ const goToOptions = {
 
     const browser = await puppet.launch( browserOptions );
 
-    const page = await browser.newPage( );
-    await page.setViewport({
-        width: 1600,
-        height: 1000
-    });
+    await roomi(browser, goToOptions);
 
-    await roomi(page, goToOptions);
+    await browser.close();
 
 })();
