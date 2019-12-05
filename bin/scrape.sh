@@ -1,4 +1,6 @@
 #!/usr/bin/env javascript
-cd ..
+cd ../app
+
 ls -l
+
 npm run start
