@@ -1,9 +1,5 @@
 import puppet from 'puppeteer';
-// import StealthPlugin from 'puppeteer-extra-plugin-stealth';
-
 import roomi from './roomi';
-
-// puppet.use(StealthPlugin());
 
 const browserOptions =  {
     args: [ '--no-sandbox', '--disable-web-security', '--disable-notifications', '--window-size=1600,1000'],

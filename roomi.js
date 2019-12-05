@@ -93,5 +93,8 @@ export default async (page, goToOptions) => {
         }
     }
 
-    fs.writeFileSync('./roomi.json', JSON.stringify(results));
+    fs.writeFileSync('./roomi.json', JSON.stringify({
+        scraped: new Date().toLocaleString(),
+        data: results
+    }));
 };

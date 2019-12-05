@@ -8,6 +8,6 @@
     "puppeteer": "^2.0.0"
   },
   "scripts": {
-    "start": "node -r esm app.js"
+    "scrape": "node -r esm scrape.js"
   }
 }
