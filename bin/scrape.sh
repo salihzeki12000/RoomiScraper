@@ -1,4 +1,5 @@
-#!/usr/bin/env javascript
+#!/usr/bin/env
+
 cd ../app
 
 ls -l
