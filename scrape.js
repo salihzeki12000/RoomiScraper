@@ -3,7 +3,7 @@ import roomiScraper from './roomi_scraper';
 
 const browserOptions =  {
     args: [ '--no-sandbox', '--disable-web-security', '--disable-notifications', '--window-size=1600,1000'],
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true
 };
 
