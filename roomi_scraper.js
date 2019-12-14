@@ -118,7 +118,7 @@ const roomiScraper = async (browser, goToOptions) => {
 
             for (let i=0; i < rooms.length; i++) {
 
-                let $ = await scraper.fetchHtml('VDP', $(rooms[i]).attr('href'));
+                $ = await scraper.fetchHtml('VDP', $(rooms[i]).attr('href'));
 
                 // 404 banner
                 if ($('.banner-text:contains("Bummer")').length === 0) {
@@ -146,7 +146,7 @@ const roomiScraper = async (browser, goToOptions) => {
 
                         roomDetails.userBio = await (async () => {
 
-                            let $ = await scraper.fetchHtml('BIO', $('.read-more').attr('href'));
+                            $ = await scraper.fetchHtml('BIO', $('.read-more').attr('href'));
                             return $('.jss269').text();
 
                         })();
