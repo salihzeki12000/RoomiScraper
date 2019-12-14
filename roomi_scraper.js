@@ -77,7 +77,7 @@ class Scraper {
         console.log(staticResults);
 
         // save static scraped data to filesystem
-        fs.writeFileSync('./roomi_scraped_results.json', JSON.stringify(staticResults));
+        fs.writeFileSync('./static_data/roomi_scraped_results.json', JSON.stringify(staticResults));
 
         console.log('Saved results to disk. Found ' + this.results.length + ' rooms.');
     }

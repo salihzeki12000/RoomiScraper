@@ -12,7 +12,7 @@
     "twilio": "^3.38.0"
   },
   "scripts": {
-    "scrape": "node -r esm scrape.js",
-    "evaluate": "node -r esm evaluate.js"
+    "scrape": "node -r esm scrape_listings.js",
+    "evaluate": "node -r esm evaluate_listings.js"
   }
 }
