@@ -24,13 +24,13 @@ npm run evaluate
 
 ## Deployment
 
-Live on my Heroku
+Live on Heroku
 
 ## Built With
 
-* [node](http://www.dropwizard.io/1.0.2/docs/)
-* [puppeteer](https://rometools.github.io/rome/)
-* [cheerio](https://rometools.github.io/rome/)
+* [node](https://github.com/nodejs/node)
+* [puppeteer](https://github.com/puppeteer/puppeteer)
+* [cheerio](https://github.com/cheeriojs/cheerio)
 
 ## Authors
 
