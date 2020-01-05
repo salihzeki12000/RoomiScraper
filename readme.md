@@ -42,4 +42,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Roomiapp.com for not being too strict on bots
+* Roomiapp.com for not policing bots

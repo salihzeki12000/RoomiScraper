@@ -12,7 +12,6 @@ const goToOptions = {
     timeout: 300000
 };
 
-
 /**
  *
  */

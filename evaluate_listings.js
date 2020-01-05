@@ -40,7 +40,9 @@ const sendWhatsAppMessage = async (listingsArray) => {
 
 };
 
-
+/**
+ *
+ */
 (async () => {
 
     const results = JSON.parse(fs.readFileSync(scrapedResultsPath, 'utf8'));
