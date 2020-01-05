@@ -36,10 +36,6 @@ Live on Heroku
 
 * **Alan Johnson** - ajosephjohnson@gmail.com
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
 ## Acknowledgments
 
 * Roomiapp.com for not policing bots
